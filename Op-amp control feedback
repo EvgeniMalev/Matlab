@@ -1,0 +1,8 @@
+%closefeed
+ngo =[1,1];
+dgo=conv([1 2],[1 3]);
+nh=[1 3];
+dh=[1 4];
+[ngc2,dgc2]=feedback(ngo,dgo,nh,dh);
+printsys(ngc2,dgc2);
+
