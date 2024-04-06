@@ -1,0 +1,32 @@
+function (LoadOn, ChON) = fcn(SOC)
+     LOADON = 1;   // logic condition on load relay initial states
+     CHON = 0;   // logic condition on charge relay initial states
+  if (SOC >= 80) 
+     LOADON = 1;   
+     CHON = 0; 
+   else (SOC < 40)
+     LOADON = 0;   
+     CHON = 1;  
+end
+
+
+/*******************************************************
+                 Battery parameters
+*******************************************************/
+
+Li-Ion 18650 [3.7 2.08]
+CGR 18650 [4.2 1.4]
+E 18650 [3.6 2.8]
+IRC 18650 [3.7 2.4]
+LG CS [3.7 2.2]
+Ni-Cd [1.2 0.89]
+Ni-Mn [1.2 0.9]
+
+
+
+
+
+
+
+
+
